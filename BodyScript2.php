@@ -10,6 +10,6 @@ class BodyScript2 {
 	 */
    public static function onSkinAfterContent( &$data, Skin $skin ) {
       global $wgBodyScript2Code;
-      $data = $wgBodyScript2Code;
+      $data .= $wgBodyScript2Code;
    }
 }
