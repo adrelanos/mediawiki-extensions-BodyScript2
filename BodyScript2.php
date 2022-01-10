@@ -1,7 +1,5 @@
-public static function onAfterFinalPageOutput( $out ) {
-   $out = ob_get_clean();
-   ob_start();
-   $out .= $wgBodyScript2Code;
-   echo $out;
+public static function onAfterFinalPageOutput( &$out ) {
+   global $wgBodyScript2Code;
+   $out->addHTML( $wgBodyScript2Code );
    return true;
 }
