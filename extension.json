@@ -19,9 +19,7 @@
 		]
 	},
 	"Hooks": {
-		"BeforePageDisplay": [
-			"BodyScript2::onBeforePageDisplay"
-		]
+		"OutputPageParserOutput": "MyExtensionHooks::onOutputPageParserOutput"
 	},
 	"AutoloadClasses": {
 		"BodyScript2": "BodyScript2.php"
