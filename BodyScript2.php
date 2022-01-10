@@ -7,7 +7,8 @@ class BodyScript2 {
 	 *
 	 * @param OutputPage &$out
 	 */
-   public static function onOutputPageParserOutput( OutputPage &$out, ParserOutput $parserOutput ) {
+   #public static function onOutputPageParserOutput( OutputPage &$out, ParserOutput $parserOutput ) {
+   public static function onAfterFinalPageOutput( &$output )
 		global $wgBodyScript2Code;
 
 		$out->addHTML( $wgBodyScript2Code );

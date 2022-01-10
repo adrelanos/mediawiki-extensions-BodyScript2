@@ -19,7 +19,7 @@
 		]
 	},
 	"Hooks": {
-		"OutputPageParserOutput": "BodyScript2::onOutputPageParserOutput"
+		"AfterFinalPageOutput": "BodyScript2::onAfterFinalPageOutput"
 	},
 	"AutoloadClasses": {
 		"BodyScript2": "BodyScript2.php"
