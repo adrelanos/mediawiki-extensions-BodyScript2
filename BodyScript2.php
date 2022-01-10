@@ -1,6 +1,6 @@
 <?php
 
-class HeadScript {
+class BodyScript2 {
 
 	/**
 	 * Code for adding the head script to the wiki
@@ -9,8 +9,8 @@ class HeadScript {
 	 * @param Skin &$skin
 	 */
 	public static function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {
-		global $wgHeadScriptCode, $wgHeadScriptName;
+		global $wgBodyScript2Code;
 
-		$out->addHeadItem( $wgHeadScriptName, $wgHeadScriptCode );
+		$out->addHTML( $wgBodyScript2Code );
 	}
 }
