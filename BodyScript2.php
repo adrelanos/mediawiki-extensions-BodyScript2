@@ -11,6 +11,6 @@ class BodyScript2 {
    public static function onAfterFinalPageOutput( &$output )
 		global $wgBodyScript2Code;
 
-		$out->addHTML( $wgBodyScript2Code );
+		$output->addHTML( $wgBodyScript2Code );
 	}
 }
