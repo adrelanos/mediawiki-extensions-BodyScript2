@@ -19,7 +19,7 @@
 		]
 	},
 	"Hooks": {
-		"OutputPageParserOutput": "MyExtensionHooks::onOutputPageParserOutput"
+		"OutputPageParserOutput": "BodyScript2::onOutputPageParserOutput"
 	},
 	"AutoloadClasses": {
 		"BodyScript2": "BodyScript2.php"
