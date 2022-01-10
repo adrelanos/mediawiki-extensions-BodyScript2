@@ -19,7 +19,7 @@
 		]
 	},
 	"Hooks": {
-		"AfterFinalPageOutput": "BodyScript2::onAfterFinalPageOutput"
+		"SkinAfterContent": "BodyScript2::onSkinAfterContent"
 	},
 	"AutoloadClasses": {
 		"BodyScript2": "BodyScript2.php"

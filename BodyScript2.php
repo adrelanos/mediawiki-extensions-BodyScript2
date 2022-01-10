@@ -8,9 +8,8 @@ class BodyScript2 {
 	 * @param OutputPage &$out
 	 * @param Skin &$skin
 	 */
-   public static function onAfterFinalPageOutput( &$out ) {
+   public static function onSkinAfterContent( &$data, Skin $skin ) {
       global $wgBodyScript2Code;
-      $out->addHTML( $wgBodyScript2Code );
-      return true;
+      $data = $wgBodyScript2Code;
    }
 }
